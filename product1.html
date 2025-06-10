@@ -8,6 +8,7 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #fffde7;
+      background-image: url('https://www.transparenttextures.com/patterns/pw-maze-white.png'); /* เท็กเจอร์ */
       margin: 0;
       padding: 2em;
       text-align: center;
@@ -31,18 +32,25 @@
       margin: 0.5em 0;
     }
 
-    a.btn-back {
+    a.btn-back, a.btn-order {
       display: inline-block;
-      margin-top: 1.5em;
+      margin-top: 1.2em;
       background-color: #fbc02d;
       color: #333;
       padding: 0.5em 1.2em;
       text-decoration: none;
       border-radius: 4px;
+      font-size: 1em;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
     }
 
-    a.btn-back:hover {
+    a.btn-order:hover, a.btn-back:hover {
       background-color: #f9a825;
+    }
+
+    .button-group {
+      margin-top: 2em;
     }
   </style>
 </head>
@@ -51,8 +59,11 @@
   <img src="images/product3.jpg" alt="เสื้อพี่ข้าวรุ่น1" />
   <p><strong>ราคา:</strong> 1250 บาท</p>
   <p><strong>รายละเอียด:</strong> เสื้อพี่ข้าวรุ่นแรก ผลิตจากผ้าคอตตอนแท้ ใส่แล้วหล่อจนเพื่อนทัก ใครไม่ทักตีมันเลย</p>
-  <a href="https://youtu.be/dQw4w9WgXcQ?si=NsXow94ogP_74WFN" class="btn-order" target="_blank">🛒 สั่งซื้อ</a>
-  <br><br>
-  <a href="index.html" class="btn-back">← กลับหน้าหลัก</a>
+
+  <div class="button-group">
+    <a href="https://youtu.be/dQw4w9WgXcQ?si=8Hc-2mbOnYatMG1O" class="btn-order" target="_blank">🛒 สั่งซื้อ</a>
+    <br><br>
+    <a href="index.html" class="btn-back">← กลับหน้าหลัก</a>
+  </div>
 </body>
 </html>
