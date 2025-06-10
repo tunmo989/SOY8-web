@@ -8,10 +8,21 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #fffde7;
-      background-image: url('https://www.transparenttextures.com/patterns/pw-maze-white.png'); /* เท็กเจอร์ */
+      background-image: url('https://www.transparenttextures.com/patterns/pw-maze-white.png');
       margin: 0;
       padding: 2em;
       text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2em;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
     }
 
     img {
@@ -19,17 +30,34 @@
       width: 100%;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      margin-bottom: 1em;
+    }
+
+    .review {
+      max-width: 400px;
+      font-size: 1.1em;
+      color: #444;
+    }
+
+    .stars {
+      color: #fbc02d;
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
     }
 
     h1 {
       color: #333;
+      text-align: center;
+      margin-bottom: 1em;
     }
 
-    p {
+    p.price {
       font-size: 1.2em;
       color: #666;
       margin: 0.5em 0;
+    }
+
+    p.details {
+      margin-bottom: 1.5em;
     }
 
     a.btn-back, a.btn-order {
@@ -43,6 +71,8 @@
       font-size: 1em;
       box-shadow: 0 3px 6px rgba(0,0,0,0.1);
       transition: background-color 0.3s ease;
+      text-align: center;
+      margin-right: 1em;
     }
 
     a.btn-order:hover, a.btn-back:hover {
@@ -51,18 +81,32 @@
 
     .button-group {
       margin-top: 2em;
+      text-align: center;
+      width: 100%;
     }
   </style>
 </head>
 <body>
   <h1>เสื้อพี่ข้าวรุ่น1</h1>
-  <img src="images/product3.jpg" alt="เสื้อพี่ข้าวรุ่น1" />
-  <p><strong>ราคา:</strong> 1250 บาท</p>
-  <p><strong>รายละเอียด:</strong> เสื้อพี่ข้าวรุ่นแรก ผลิตจากผ้าคอตตอนแท้ ใส่แล้วหล่อจนเพื่อนทัก ใครไม่ทักตีมันเลย</p>
+
+  <div class="container">
+    <img src="images/product3.jpg" alt="เสื้อพี่ข้าวรุ่น1" />
+    
+    <div class="review">
+      <div class="stars">
+        ★★★★★
+      </div>
+      <p>ใส่สบายมากครับ</p>
+            <p>มาซื้อเพราะชอบเลยนะอร้ายยยย</p>
+            <p>ชอบพี่ข้าวค่ะ</p>
+    </div>
+  </div>
+
+  <p class="price"><strong>ราคา:</strong> 1250 บาท</p>
+  <p class="details"><strong>รายละเอียด:</strong> เสื้อพี่ข้าวรุ่นแรก ผลิตจากผ้าคอตตอนแท้ ใส่แล้วหล่อจนเพื่อนทัก ใครไม่ทักตีมันเลย</p>
 
   <div class="button-group">
-    <a href="https://youtu.be/dQw4w9WgXcQ?si=8Hc-2mbOnYatMG1O" class="btn-order" target="_blank">🛒 สั่งซื้อ</a>
-    <br><br>
+    <a href="https://youtu.be/dQw4w9WgXcQ?si=333E8ver4FFk8NoW" class="btn-order" target="_blank">🛒 สั่งซื้อ</a>
     <a href="index.html" class="btn-back">← กลับหน้าหลัก</a>
   </div>
 </body>
